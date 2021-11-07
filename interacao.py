@@ -16,7 +16,7 @@ players = 0
 while players < 2 or players > 4:
   players = int(input('Informe o número de Jogadores (2-4): '))
   if players < 2 or players > 4:
-    print('Resposta inválida')
+    print('\033[31mResposta inválida')
 
 
 peças = cria_pecas
@@ -28,7 +28,7 @@ monte = inicio['monte']
 ordem_jogadores = np.arange(0, players)
 random.shuffle(ordem_jogadores)
 
-print(f'Temos {players} com 7 peças cada. \n')
+print(f'Temos \033[31m{players} com 7 peças cada. \n')
 
 jogo = True
 while jogo == True: 
