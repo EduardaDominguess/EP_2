@@ -10,15 +10,20 @@ print()
 print('Jogo de Dominó')
 print()
 
+n = print(input('Você deseja jogar? s/n ')
+if n == n:
+print()
+print('Jogo de Dominó')
+print()
+          
+elif n == s:
 
-def num_jogadores():
-  players = 0
-  while players < 2 or players > 4:
-    players = int(input('Informe o número de Jogadores (2-4): '))
-    if players < 2 or players > 4:
-      print('Resposta inválida')
-  return players
 
+players = 0
+while players < 2 or players > 4:
+  players = int(input('Informe o número de Jogadores (2-4): '))
+  if players < 2 or players > 4:
+    print('Resposta inválida')
 
 
 peças = cria_pecas
