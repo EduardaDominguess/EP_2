@@ -20,6 +20,7 @@ def num_jogadores():
   return players
 
 
+
 peças = cria_pecas
 inicio = inicia_jogo
 mesa = inicio ['mesa']
