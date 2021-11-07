@@ -23,6 +23,16 @@ def num_jogadores():
 peças = cria_pecas
 inicio = inicia_jogo
 mesa = inicio ['mesa']
+pecas_jogadores = inicio['jogadores']
+
+ordem = np.arange(0, num_jogadores)
+random.shuffle(ordem)
+
+print(f'Temos {num_jogadores} com 7 peças cada. \n')
+
+
+
+
 
 
 
