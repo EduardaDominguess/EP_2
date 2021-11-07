@@ -12,13 +12,11 @@ print('Jogo de Dominó')
 print()
 
 
-def num_jogadores():
-  players = 0
-  while players < 2 or players > 4:
-    players = int(input('Informe o número de Jogadores (2-4): '))
-    if players < 2 or players > 4:
-      print('Resposta inválida')
-  return players
+players = 0
+while players < 2 or players > 4:
+  players = int(input('Informe o número de Jogadores (2-4): '))
+  if players < 2 or players > 4:
+    print('Resposta inválida')
 
 
 peças = cria_pecas
@@ -27,15 +25,14 @@ mesa = inicio ['mesa']
 pecas_jogadores = inicio['jogadores']
 monte = inicio['monte']
 
-ordem_jogadores = np.arange(0, num_jogadores)
+ordem_jogadores = np.arange(0, players)
 random.shuffle(ordem_jogadores)
 
-print(f'Temos {num_jogadores} com 7 peças cada. \n')
+print(f'Temos {players} com 7 peças cada. \n')
 
 jogo = True
-while jogo: 
+while jogo == True: 
     for i in ordem_jogadores:
-        def formatacao():
             print(f'Tamanho monte {len(pecas_jogadores)} peças.')
             print(f'Mesa: {mesa}')
             print('')
