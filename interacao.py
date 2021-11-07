@@ -1,28 +1,29 @@
-from funcoes import *
 from criaPeças import *
 from inicia_jogo import *
 from Possível_mão import *
 from Soma_de_peças import *
-#from verifica_ganhador import *
+from verifica_ganhador import *
+from AdicionaMesa import *
 
 
 print()
 print('Jogo de Dominó')
 print()
 
-numero_jogadores = num_jogadores
-peças = cria_pecas()
-inicio = inicia_jogo(numero_jogadores, peças)
 
-quem_comeca = random.randint(0,num_jogadores -1)
+def num_jogadores():
+  players = 0
+  while players < 2 or players > 4:
+    players = int(input('Informe o número de Jogadores (2-4): '))
+    if players < 2 or players > 4:
+      print('Resposta inválida')
+  return players
 
-winner = -1
-som_peças = 0
 
-while winner == -1 and som_peças <num_jogadores:
-    mesa = inicio ['mesa']
-    peças = inicio ['jogadores'][quem_comeca]
-    possivel = posicoes_possiveis[mesa, peças]
+peças = cria_pecas
+inicio = inicia_jogo
+mesa = inicio ['mesa']
 
-    
+
+
 
