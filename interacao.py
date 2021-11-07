@@ -1,4 +1,4 @@
-from criaPeças import *
+from cria_pecas import *
 from inicia_jogo import *
 from Possível_mão import *
 from Soma_de_peças import *
