@@ -13,16 +13,15 @@ print('------------------------------------')
 
 jogo = True
 
-while jogo:
-    players = int(input('Informe o número de Jogadores (2-4): '))
-    if players < 2 or players > 4:
-        print('\033[31mResposta inválida')
-    else:
-        jogo = False
+players = 0
+while players < 2 or players > 4:
+  players = int(input('Informe o número de Jogadores (2-4): '))
+  if players < 2 or players > 4:
+    print('\033[31mResposta inválida')
 
 
-peças = cria_pecas()
-inicio = inicia_jogo(players, peças)
+peças = cria_pecas
+inicio = inicia_jogo
 mesa = inicio ['mesa']
 pecas_jogadores = inicio['jogadores']
 monte = inicio['monte']
@@ -33,30 +32,26 @@ random.shuffle(ordem_jogadores)
 print(f'Temos \033[31m{players} com 7 peças cada. \n')
 
 jogo = True
-while jogo: 
+while jogo == True: 
     for i in ordem_jogadores:
-        print(f'Tamanho monte {len(pecas_jogadores)} peças.')
-        print(f'Mesa: {mesa}')
-        
-        print('')
+            print(f'Tamanho monte {len(pecas_jogadores)} peças.')
+            print(f'Mesa: {mesa}')
+            print('')
 
-        if i != 0:
-            print(f'Peças jogador \033[31m{i}: \033[32m{len(pecas_jogadores[i])} ')
-        else:
-            print(f'Peças jogador \033[31m{0}: \033[32m{len(pecas_jogadores[0])} ')
-            print(pecas_jogadores[0])
+            if i != 0:
+                print(f'Peças jogador {i}: {len(pecas_jogadores[i])} ')
+            else:
+                print(f'Peças jogador {0}: {len(pecas_jogadores[0])} ')
+                print(pecas_jogadores[0])
             
-        print('')
+            print('')
+            
 
-        if len(posicoes_possiveis(mesa,pecas_jogadores[i])) >= 1  and i == 0 :
-            print('Possíveis possições das peças: ')
-            print(posicoes_possiveis(mesa, pecas_jogadores[i]))
-           
-
-        if i == 0:
-            começa_a_jogar = int(input('Escolha uma peça para jogar: '))
-            adiciona_na_mesa(pecas_jogadores[i][começa_a_jogar], mesa)
-            pecas_jogadores[i].pop(começa_a_jogar)
+            if len(posicoes_possiveis(mesa,pecas_jogadores[i])) >= 1  and i == 0 :
+                print(posicoes_possiveis(mesa, peças_jogadores[i])
+                começa_a_jogar = int(input('Escolha uma peça para jogar: '))
+                mesa_add(pecas_jogadores[i][começa_a_jogar], mesa)
+                pecas_jogadores[i].pop(jogar)
 
 #Comprar do monte
 
