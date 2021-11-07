@@ -44,12 +44,10 @@ while jogo == True:
                 print(pecas_jogadores[0])
             
             print('')
+            
 
             if len(posicoes_possiveis(mesa,pecas_jogadores[i])) >= 1  and i == 0 :
                 print(posicoes_possiveis(mesa, peças_jogadores[i])
-           
-
-            if i == 0:
                 começa_a_jogar = int(input('Escolha uma peça para jogar: '))
                 mesa_add(pecas_jogadores[i][começa_a_jogar], mesa)
                 pecas_jogadores[i].pop(jogar)
