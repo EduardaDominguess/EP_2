@@ -30,10 +30,5 @@ random.shuffle(ordem)
 
 print(f'Temos {num_jogadores} com 7 peças cada. \n')
 
-
-
-
-
-
-
-
+jogo = True
+while jogo: 
