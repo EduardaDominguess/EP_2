@@ -32,7 +32,7 @@ random.shuffle(ordem_jogadores)
 print(f'Temos \033[31m{players} com 7 peças cada. \n')
 
 jogo = True
-while jogo == True: 
+while jogo: 
     for i in ordem_jogadores:
             print(f'Tamanho monte {len(pecas_jogadores)} peças.')
             print(f'Mesa: {mesa}')
