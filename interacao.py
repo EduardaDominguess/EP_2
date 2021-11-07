@@ -1,4 +1,4 @@
-
+import numpy as np
 from criaPeças import *
 from inicia_jogo import *
 from posicoes_possiveis import *
