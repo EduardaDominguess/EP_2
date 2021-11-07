@@ -1,6 +1,9 @@
-def verifica_ganhador(num_pecas):
-    for k, v in num_pecas['jogadores'].item():
-        if len(v) == 0:
+def verifica_ganhador(dicionario):
+    for k in dicionario.keys():
+        if dicionario[k] == []:
+            return k
+    else: return -1
+    
             
 
     
