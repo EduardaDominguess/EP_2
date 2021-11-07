@@ -31,7 +31,7 @@ inicio = inicia_jogo
 mesa = inicio ['mesa']
 pecas_jogadores = inicio['jogadores']
 
-ordem = np.arange(0, num_jogadores)
+ordem = np.arange(0, players)
 random.shuffle(ordem)
 
 print(f'Temos {num_jogadores} com 7 peças cada. \n')
