@@ -4,7 +4,7 @@ from inicia_jogo import *
 from posicoes_possiveis import *
 from Soma_de_peças import *
 from verifica_ganhador import *
-from  import *
+from AdicionaPeças_Mesa import *
 from AdicionaMesa import *
 from random import *
 
